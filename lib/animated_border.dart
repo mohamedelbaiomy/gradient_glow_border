@@ -1,20 +1,40 @@
 import 'package:flutter/material.dart';
-import 'center_cut_path.dart';
-import 'dashed_border_painter.dart';
-import 'dotted_border_painter.dart';
+import 'src/center_cut_path.dart';
+import 'src/dashed_border_painter.dart';
+import 'src/dotted_border_painter.dart';
 
 class AnimatedBorder extends StatefulWidget {
+  /// The border radius for each corner of the border.
   final BorderRadius borderRadius;
+
+  /// The blur radius of the glow effect.
   final double blurRadius;
+
+  /// The spread radius of the glow effect.
   final double spreadRadius;
+
+  /// The list of colors for the gradient.
   final List<Color> colors;
+
+  /// The opacity of the glow effect.
   final double glowOpacity;
+
+  /// The duration of the animation.
   final Duration duration;
+
+  /// The thickness of the border.
   final double thickness;
+
   final bool dashed;
   final bool dotted;
+
+  /// The space between dashes (only for dashed borders).
   final double dashSpace;
+
+  /// The space between dots (only for dotted borders).
   final double dottedSpace;
+
+  /// The child widget to apply the animated border to.
   final Widget? child;
 
   // Named constructor for normal gradient border
