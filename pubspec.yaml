@@ -1,5 +1,5 @@
 name: animated_border
-description: "A new Flutter project."
+description: "A Flutter package for creating stunning animated gradient borders with support for normal, dashed, and dotted styles"
 version: 0.0.1
 homepage: "https://github.com/mohamedelbaiomy/animated_border"
 

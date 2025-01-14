@@ -1,3 +1,8 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+- ## First version.
+
+- **Add Normal Gradient**: solid animated gradient border.
+- **Add Dashed Gradient**: dashed animated gradient border with customizable dash spacing.
+- **Add Dotted Gradient**: dotted animated gradient border with customizable dot spacing.
+
