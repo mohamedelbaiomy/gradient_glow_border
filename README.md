@@ -81,18 +81,18 @@ AnimatedBorder.dottedGradient(
 ## Quick reference
 Since customization requires a lot of properties, here is a quick cheatsheet:
 
-| Parameter      | What does it do                                     |
-|----------------|-----------------------------------------------------|
-| `borderRadius` | The border radius for each corner of the border.    |
-| `spreadRadius` | The spread radius of the glow effect.               |
-| `glowOpacity`  | The opacity of the glow effect.                     |
-| `dottedSpace`  | The space between dots (only for dotted borders).   |
-| `dashSpace`    | The space between dashes (only for dashed borders). |
-| `blurRadius`   | The blur radius of the glow effect.                 |
-| `duration`     | The duration of the animation.                      |
-| `thickness`    | The thickness of the border.                        |
-| `colors`       | The list of colors for the gradient.                |
-| `child`        | The child widget to apply the animated border to.   |
+| Parameter      | Type           | What does it do                                     |
+|----------------|----------------|-----------------------------------------------------|
+| `borderRadius` | `BorderRadius` | The border radius for each corner of the border.    |
+| `spreadRadius` | `double`       | The spread radius of the glow effect.               |
+| `glowOpacity`  | `double`       | The opacity of the glow effect.                     |
+| `dottedSpace`  | `double`       | The space between dots (only for dotted borders).   |
+| `dashSpace`    | `double`       | The space between dashes (only for dashed borders). |
+| `blurRadius`   | `double`       | The blur radius of the glow effect.                 |
+| `duration`     | `Duration`     | The duration of the animation.                      |
+| `thickness`    | `double`       | The thickness of the border.                        |
+| `colors`       | `List<Color>`  | The list of colors for the gradient.                |
+| `child`        | `Widget?`      | The child widget to apply the animated border to.   |
 
 ## Example
 Here’s a complete example of using the `AnimatedBorder` package:
