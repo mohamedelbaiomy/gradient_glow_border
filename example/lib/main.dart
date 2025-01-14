@@ -1,4 +1,4 @@
-import 'package:animated_border/animated_border.dart';
+import 'package:gradient_glow_border/gradient_glow_border.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,27 +11,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Animated Border',
+      title: 'Gradient Glow Border',
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: TestAnimatedBorder(),
+      home: TestGradientGlowBorder(),
     );
   }
 }
 
-class TestAnimatedBorder extends StatefulWidget {
-  const TestAnimatedBorder({super.key});
+class TestGradientGlowBorder extends StatefulWidget {
+  const TestGradientGlowBorder({super.key});
 
   @override
-  State<TestAnimatedBorder> createState() => _TestAnimatedBorderState();
+  State<TestGradientGlowBorder> createState() => _TestGradientGlowBorderState();
 }
 
-class _TestAnimatedBorderState extends State<TestAnimatedBorder> {
+class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Animated Border"),
+        title: Text("Gradient Glow Border"),
       ),
       body: Center(
         child: Padding(
@@ -42,7 +42,7 @@ class _TestAnimatedBorderState extends State<TestAnimatedBorder> {
               SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: AnimatedBorder.normalGradient(
+                child: GradientGlowBorder.normalGradient(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   blurRadius: 1,
                   colors: [
@@ -61,7 +61,7 @@ class _TestAnimatedBorderState extends State<TestAnimatedBorder> {
               SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: AnimatedBorder.dashedGradient(
+                child: GradientGlowBorder.dashedGradient(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   blurRadius: 1,
                   colors: [
@@ -81,7 +81,7 @@ class _TestAnimatedBorderState extends State<TestAnimatedBorder> {
               SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: AnimatedBorder.dottedGradient(
+                child: GradientGlowBorder.dottedGradient(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   blurRadius: 1,
                   colors: [
@@ -101,7 +101,7 @@ class _TestAnimatedBorderState extends State<TestAnimatedBorder> {
               SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: AnimatedBorder.dashedGradient(
+                child: GradientGlowBorder.dashedGradient(
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(30),
                     topLeft: Radius.circular(1),

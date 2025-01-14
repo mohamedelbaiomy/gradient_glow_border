@@ -1,4 +1,4 @@
-# Animated Border
+# Gradient Glow Border
 
 A Flutter package for creating stunning animated gradient borders with support for normal, dashed, and dotted styles. This package allows you to easily add animated borders to your widgets with customizable colors, radius, thickness, and animation effects.
 
@@ -10,6 +10,7 @@ A Flutter package for creating stunning animated gradient borders with support f
     - Normal Gradient: A solid animated gradient border.
     - Dashed Gradient: A dashed animated gradient border with customizable dash spacing.
     - Dotted Gradient: A dotted animated gradient border with customizable dot spacing.
+
 - Custom Border Radius: Apply different border radii to each corner of the border.
 - Glow Effect: Add a glowing shadow effect to the border.
 - Fully Customizable: Control the animation duration, gradient colors, thickness, and more.
@@ -18,16 +19,16 @@ A Flutter package for creating stunning animated gradient borders with support f
 Add the package to your `pubspec.yaml` file:
 ```
 dependencies:
-  animated_border: ^1.0.0
+  gradient_glow_border: ^1.0.0
 ```
 Then, run flutter pub get to install the package.
 
 ## Usage
 1) Normal Gradient Border
-   Use the `AnimatedBorder.normalGradient` constructor to create a solid animated gradient border:
+   Use the `GradientGlowBorder.normalGradient` constructor to create a solid animated gradient border:
 
 ```
-AnimatedBorder.normalGradient(
+GradientGlowBorder.normalGradient(
   borderRadius: BorderRadius.circular(15),
   blurRadius: 1,
   spreadRadius: 1,
@@ -41,10 +42,10 @@ AnimatedBorder.normalGradient(
 ![Normal Gradient](https://github.com/mohamedelbaiomy/animated_border/blob/master/assets/1.gif?raw=true)
 
 2) Dashed Gradient Border
-   Use the `AnimatedBorder.dashedGradient` constructor to create a dashed animated gradient border:
+   Use the `GradientGlowBorder.dashedGradient` constructor to create a dashed animated gradient border:
 
 ```
-AnimatedBorder.dashedGradient(
+GradientGlowBorder.dashedGradient(
   borderRadius: BorderRadius.circular(15),
   blurRadius: 1,
   spreadRadius: 0,
@@ -60,10 +61,10 @@ AnimatedBorder.dashedGradient(
 ![Dashed Gradient](https://github.com/mohamedelbaiomy/animated_border/blob/master/assets/2.gif?raw=true)
 
 3) Dotted Gradient Border
-   Use the `AnimatedBorder.dottedGradient` constructor to create a dotted animated gradient border:
+   Use the `GradientGlowBorder.dottedGradient` constructor to create a dotted animated gradient border:
 
 ```
-AnimatedBorder.dottedGradient(
+GradientGlowBorder.dottedGradient(
   borderRadius: BorderRadius.circular(20),
   blurRadius: 1,
   spreadRadius: 0,
@@ -95,11 +96,11 @@ Since customization requires a lot of properties, here is a quick cheatsheet:
 | `child`        | `Widget?`      | The child widget to apply the animated border to.   |
 
 ## Example
-Here’s a complete example of using the `AnimatedBorder` package:
+Here’s a complete example of using the `GradientGlowBorder` package:
 
 ```
 import 'package:flutter/material.dart';
-import 'package:animated_border/animated_border.dart';
+import 'package:gradient_glow_border/gradient_glow_border.dart';
 
 void main() {
   runApp(MyApp());
@@ -115,7 +116,7 @@ class MyApp extends StatelessWidget {
           child: SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: AnimatedBorder.normalGradient(
+                child: GradientGlowBorder.normalGradient(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   blurRadius: 1,
                   colors: [

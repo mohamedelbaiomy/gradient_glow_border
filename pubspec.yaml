@@ -1,7 +1,7 @@
-name: animated_border
+name: gradient_glow_border
 description: "A Flutter package for creating stunning animated gradient borders with support for normal, dashed, and dotted styles"
 version: 1.0.0
-homepage: "https://github.com/mohamedelbaiomy/animated_border"
+homepage: "https://github.com/mohamedelbaiomy/gradient_glow_border"
 
 environment:
   sdk: ^3.6.0

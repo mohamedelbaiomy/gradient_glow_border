@@ -3,7 +3,7 @@ import 'src/center_cut_path.dart';
 import 'src/dashed_border_painter.dart';
 import 'src/dotted_border_painter.dart';
 
-class AnimatedBorder extends StatefulWidget {
+class GradientGlowBorder extends StatefulWidget {
   /// The border radius for each corner of the border.
   final BorderRadius borderRadius;
 
@@ -38,7 +38,7 @@ class AnimatedBorder extends StatefulWidget {
   final Widget? child;
 
   // Named constructor for normal gradient border
-  const AnimatedBorder.normalGradient({
+  const GradientGlowBorder.normalGradient({
     super.key,
     required this.borderRadius,
     required this.blurRadius,
@@ -54,7 +54,7 @@ class AnimatedBorder extends StatefulWidget {
         dottedSpace = 0.0;
 
   // Named constructor for dashed gradient border
-  const AnimatedBorder.dashedGradient({
+  const GradientGlowBorder.dashedGradient({
     super.key,
     required this.borderRadius,
     required this.blurRadius,
@@ -70,7 +70,7 @@ class AnimatedBorder extends StatefulWidget {
         dottedSpace = 0.0;
 
   // Named constructor for dotted gradient border
-  const AnimatedBorder.dottedGradient({
+  const GradientGlowBorder.dottedGradient({
     super.key,
     required this.borderRadius,
     required this.blurRadius,
@@ -86,10 +86,10 @@ class AnimatedBorder extends StatefulWidget {
         dashSpace = 0.0;
 
   @override
-  State<AnimatedBorder> createState() => _AnimatedBorderState();
+  State<GradientGlowBorder> createState() => _GradientGlowBorderState();
 }
 
-class _AnimatedBorderState extends State<AnimatedBorder>
+class _GradientGlowBorderState extends State<GradientGlowBorder>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _gradientAnimation;
