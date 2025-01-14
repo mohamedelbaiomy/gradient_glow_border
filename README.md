@@ -1,5 +1,10 @@
 # Gradient Glow Border
 
+[![pub package](https://img.shields.io/pub/v/gradient_glow_border.svg)](https://pub.dev/packages/gradient_glow_border)
+<a href="https://pub.dev/packages/gradient_glow_border/score"><img src="https://img.shields.io/pub/likes/gradient_glow_border" alt="likes"></a>
+<a href="https://pub.dev/packages/gradient_glow_border/score"><img src="https://img.shields.io/pub/points/gradient_glow_border" alt="pub points"></a>
+[![GitHub stars](https://img.shields.io/github/stars/mohamedelbaiomy/gradient_glow_border?style=flat&color=red)](https://github.com/mohamedelbaiomy/gradient_glow_border/stargazers)
+
 A Flutter package for creating stunning animated gradient borders with support for normal, dashed, and dotted styles. This package allows you to easily add animated borders to your widgets with customizable colors, radius, thickness, and animation effects.
 
 ## Features
