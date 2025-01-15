@@ -24,7 +24,7 @@ A Flutter package for creating stunning animated gradient borders with support f
 Add the package to your `pubspec.yaml` file:
 ```
 dependencies:
-  gradient_glow_border: ^1.0.0
+  gradient_glow_border: ^1.0.3
 ```
 Then, run flutter pub get to install the package.
 
@@ -145,15 +145,14 @@ class MyApp extends StatelessWidget {
 
 ```
 
-## 🔗 Mohamed Elbaiomy
-
-
-* [![linkedin](https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge%22%20height=%2235%22%20alt=%22linkedin%20logo%22)](https://www.linkedin.com/in/mohamed-elbaiomy262003/)
-* [![youtube](https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge%22height=%2235%22alt=%22youtube%20logo%22)](https://www.youtube.com/@mohamedelbaiomy262)
-* [![facebook](https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge%22%20height=%2235%22%20alt=%22facebook%20logo%22)](https://www.facebook.com/Original262003)
-
 ## Contributing
 Contributions are welcome! If you find a bug or have a feature request, please open an issue. If you'd like to contribute code, feel free to submit a pull request.
 
 ## License
-This project is licensed under the MIT License. See the **LICENSE** file for details
+This project is licensed under the MIT License. See the **[LICENSE](https://pub.dev/packages/gradient_glow_border/license)** file for details
+
+## 🔗 Mohamed Elbaiomy
+
+* [![linkedin](https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge%22%20height=%2235%22%20alt=%22linkedin%20logo%22)](https://www.linkedin.com/in/mohamed-elbaiomy262003/)
+* [![youtube](https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge%22height=%2235%22alt=%22youtube%20logo%22)](https://www.youtube.com/@mohamedelbaiomy262)
+* [![facebook](https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge%22%20height=%2235%22%20alt=%22facebook%20logo%22)](https://www.facebook.com/Original262003)
