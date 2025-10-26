@@ -30,9 +30,7 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Gradient Glow Border'),
-      ),
+      appBar: AppBar(title: const Text('Gradient Glow Border')),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(10),
@@ -46,19 +44,14 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                 child: GradientGlowBorder.solid(
                   borderRadius: const BorderRadius.all(Radius.circular(15)),
                   blurRadius: 1,
-                  colors: const [
-                    Colors.blue,
-                    Colors.red,
-                  ],
+                  colors: const [Colors.blue, Colors.red],
                   animate: true,
                   animationCurve: Curves.linear,
                   animationDuration: const Duration(seconds: 2),
                   glowOpacity: 1,
                   spreadRadius: 0,
                   thickness: 3,
-                  child: const Center(
-                    child: Text('Mohamed Elbaiomy'),
-                  ),
+                  child: const Center(child: Text('Mohamed Elbaiomy')),
                 ),
               ),
               // Example 2: Dashed border
@@ -67,16 +60,11 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                 width: double.infinity,
                 child: GradientGlowBorder.dashed(
                   borderRadius: const BorderRadius.all(Radius.circular(15)),
-                  colors: const [
-                    Colors.blue,
-                    Colors.red,
-                  ],
+                  colors: const [Colors.blue, Colors.red],
                   animationDuration: const Duration(seconds: 2),
                   thickness: 3,
                   spacing: 5,
-                  child: const Center(
-                    child: Text('Mohamed Elbaiomy'),
-                  ),
+                  child: const Center(child: Text('Mohamed Elbaiomy')),
                 ),
               ),
               // Example 3: Dotted border
@@ -85,16 +73,11 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                 width: double.infinity,
                 child: GradientGlowBorder.dotted(
                   borderRadius: const BorderRadius.all(Radius.circular(15)),
-                  colors: const [
-                    Colors.blue,
-                    Colors.red,
-                  ],
+                  colors: const [Colors.blue, Colors.red],
                   animationDuration: const Duration(seconds: 2),
                   thickness: 3,
                   spacing: 5,
-                  child: const Center(
-                    child: Text('Mohamed Elbaiomy'),
-                  ),
+                  child: const Center(child: Text('Mohamed Elbaiomy')),
                 ),
               ),
               // Example 4: Different border radius per corner
@@ -109,15 +92,10 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                     bottomLeft: Radius.circular(1),
                   ),
                   spacing: 5,
-                  colors: const [
-                    Colors.red,
-                    Colors.blue,
-                  ],
+                  colors: const [Colors.red, Colors.blue],
                   animationDuration: const Duration(seconds: 2),
                   thickness: 3,
-                  child: const Center(
-                    child: Text('Mohamed Elbaiomy'),
-                  ),
+                  child: const Center(child: Text('Mohamed Elbaiomy')),
                 ),
               ),
               // Example 5: Custom configuration

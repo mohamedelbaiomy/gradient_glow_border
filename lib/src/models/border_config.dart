@@ -53,15 +53,19 @@ class BorderConfig {
     this.animate = true,
     this.animationDuration = const Duration(seconds: 2),
     this.animationCurve = Curves.linear,
-  })  : assert(thickness > 0, 'Thickness must be greater than 0'),
-        assert(blurRadius >= 0, 'Blur radius must be non-negative'),
-        assert(spreadRadius >= 0, 'Spread radius must be non-negative'),
-        assert(glowOpacity >= 0 && glowOpacity <= 1,
-            'Glow opacity must be between 0 and 1'),
-        assert(
-            colors.length >= 2, 'At least 2 colors are required for gradient'),
-        assert(spacing > 0, 'Spacing must be greater than 0'),
-        assert(dashLength > 0, 'Dash length must be greater than 0');
+  }) : assert(thickness > 0, 'Thickness must be greater than 0'),
+       assert(blurRadius >= 0, 'Blur radius must be non-negative'),
+       assert(spreadRadius >= 0, 'Spread radius must be non-negative'),
+       assert(
+         glowOpacity >= 0 && glowOpacity <= 1,
+         'Glow opacity must be between 0 and 1',
+       ),
+       assert(
+         colors.length >= 2,
+         'At least 2 colors are required for gradient',
+       ),
+       assert(spacing > 0, 'Spacing must be greater than 0'),
+       assert(dashLength > 0, 'Dash length must be greater than 0');
 
   BorderConfig copyWith({
     BorderRadius? borderRadius,
@@ -113,17 +117,17 @@ class BorderConfig {
 
   @override
   int get hashCode => Object.hash(
-        borderRadius,
-        thickness,
-        blurRadius,
-        spreadRadius,
-        Object.hashAll(colors),
-        glowOpacity,
-        borderStyle,
-        spacing,
-        dashLength,
-        animate,
-        animationDuration,
-        animationCurve,
-      );
+    borderRadius,
+    thickness,
+    blurRadius,
+    spreadRadius,
+    Object.hashAll(colors),
+    glowOpacity,
+    borderStyle,
+    spacing,
+    dashLength,
+    animate,
+    animationDuration,
+    animationCurve,
+  );
 }

@@ -31,3 +31,8 @@
 
 - ## Sixth version.
 - **Refactor Code**: Use .withValues() to avoid precision loss
+
+## 2.0.2
+
+- ## Seventh version.
+- **Refactor Code**: Use dart format .

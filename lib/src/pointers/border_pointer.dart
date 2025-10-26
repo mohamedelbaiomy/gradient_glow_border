@@ -6,10 +6,7 @@ abstract class BorderPainter extends CustomPainter {
   final BorderConfig config;
   final double animationValue;
 
-  BorderPainter({
-    required this.config,
-    required this.animationValue,
-  });
+  BorderPainter({required this.config, required this.animationValue});
 
   @override
   bool shouldRepaint(covariant BorderPainter oldDelegate) {
@@ -19,16 +16,15 @@ abstract class BorderPainter extends CustomPainter {
 
   /// Creates the border path
   Path createBorderPath(Size size) {
-    return Path()
-      ..addRRect(
-        RRect.fromRectAndCorners(
-          Rect.fromLTWH(0, 0, size.width, size.height),
-          topLeft: config.borderRadius.topLeft,
-          topRight: config.borderRadius.topRight,
-          bottomLeft: config.borderRadius.bottomLeft,
-          bottomRight: config.borderRadius.bottomRight,
-        ),
-      );
+    return Path()..addRRect(
+      RRect.fromRectAndCorners(
+        Rect.fromLTWH(0, 0, size.width, size.height),
+        topLeft: config.borderRadius.topLeft,
+        topRight: config.borderRadius.topRight,
+        bottomLeft: config.borderRadius.bottomLeft,
+        bottomRight: config.borderRadius.bottomRight,
+      ),
+    );
   }
 
   /// Creates the gradient shader
@@ -44,10 +40,7 @@ abstract class BorderPainter extends CustomPainter {
 
 /// Painter for solid borders
 class SolidBorderPainter extends BorderPainter {
-  SolidBorderPainter({
-    required super.config,
-    required super.animationValue,
-  });
+  SolidBorderPainter({required super.config, required super.animationValue});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -62,10 +55,7 @@ class SolidBorderPainter extends BorderPainter {
 
 /// Painter for dashed borders
 class DashedBorderPainter extends BorderPainter {
-  DashedBorderPainter({
-    required super.config,
-    required super.animationValue,
-  });
+  DashedBorderPainter({required super.config, required super.animationValue});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -94,10 +84,7 @@ class DashedBorderPainter extends BorderPainter {
 
 /// Painter for dotted borders
 class DottedBorderPainter extends BorderPainter {
-  DottedBorderPainter({
-    required super.config,
-    required super.animationValue,
-  });
+  DottedBorderPainter({required super.config, required super.animationValue});
 
   @override
   void paint(Canvas canvas, Size size) {
