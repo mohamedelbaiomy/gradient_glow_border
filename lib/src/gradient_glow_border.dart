@@ -12,11 +12,7 @@ class GradientGlowBorder extends StatefulWidget {
   /// The child widget to wrap with the border
   final Widget? child;
 
-  const GradientGlowBorder({
-    super.key,
-    required this.config,
-    this.child,
-  });
+  const GradientGlowBorder({super.key, required this.config, this.child});
 
   /// Creates a solid gradient border
   factory GradientGlowBorder.solid({
@@ -41,7 +37,6 @@ class GradientGlowBorder extends StatefulWidget {
         blurRadius: blurRadius,
         spreadRadius: spreadRadius,
         glowOpacity: glowOpacity,
-        borderStyle: BorderStyleEnum.solid,
         animate: animate,
         animationDuration: animationDuration,
         animationCurve: animationCurve,
@@ -223,8 +218,9 @@ class _GradientGlowBorderState extends State<GradientGlowBorder>
                   borderRadius: widget.config.borderRadius,
                   boxShadow: [
                     BoxShadow(
-                      color: widget.config.colors.first
-                          .withOpacity(widget.config.glowOpacity),
+                      color: widget.config.colors.first.withValues(
+                        alpha: widget.config.glowOpacity,
+                      ),
                       blurRadius: widget.config.blurRadius,
                       spreadRadius: widget.config.spreadRadius,
                     ),
@@ -269,9 +265,6 @@ class _GradientGlowBorderState extends State<GradientGlowBorder>
         );
     }
 
-    return CustomPaint(
-      size: size,
-      painter: painter,
-    );
+    return CustomPaint(size: size, painter: painter);
   }
 }

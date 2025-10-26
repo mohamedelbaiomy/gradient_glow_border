@@ -2,7 +2,7 @@ include: package:flutter_lints/flutter.yaml
 
 analyzer:
   errors:
-    deprecated_member_use: ignore
+    deprecated_member_use: warning
 
 linter:
   rules:

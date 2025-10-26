@@ -26,3 +26,8 @@
 - **Refactor Code**: Complete code refactoring for better performance and readability.
 - **Add More Examples**: Added new examples to showcase different use cases.
 - **Update Documentation**: Updated the documentation and README file.
+
+## 2.0.1
+
+- ## Sixth version.
+- **Refactor Code**: Use .withValues() to avoid precision loss
