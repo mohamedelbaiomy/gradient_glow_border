@@ -19,3 +19,10 @@
 
 - ## Fourth version.
 - **Update Readme**
+
+## 2.0.0
+
+- ## Fifth version.
+- **Refactor Code**: Complete code refactoring for better performance and readability.
+- **Add More Examples**: Added new examples to showcase different use cases.
+- **Update Documentation**: Updated the documentation and README file.

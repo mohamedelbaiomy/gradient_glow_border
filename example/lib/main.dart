@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Gradient Glow Border',
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: TestGradientGlowBorder(),
+      home: const TestGradientGlowBorder(),
     );
   }
 }
@@ -31,7 +31,7 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Gradient Glow Border"),
+        title: const Text('Gradient Glow Border'),
       ),
       body: Center(
         child: Padding(
@@ -44,20 +44,20 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                 height: 70,
                 width: double.infinity,
                 child: GradientGlowBorder.solid(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  borderRadius: const BorderRadius.all(Radius.circular(15)),
                   blurRadius: 1,
-                  colors: [
+                  colors: const [
                     Colors.blue,
                     Colors.red,
                   ],
                   animate: true,
                   animationCurve: Curves.linear,
-                  animationDuration: Duration(seconds: 2),
+                  animationDuration: const Duration(seconds: 2),
                   glowOpacity: 1,
                   spreadRadius: 0,
                   thickness: 3,
-                  child: Center(
-                    child: Text("Mohamed Elbaiomy"),
+                  child: const Center(
+                    child: Text('Mohamed Elbaiomy'),
                   ),
                 ),
               ),
@@ -66,16 +66,16 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                 height: 70,
                 width: double.infinity,
                 child: GradientGlowBorder.dashed(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  colors: [
+                  borderRadius: const BorderRadius.all(Radius.circular(15)),
+                  colors: const [
                     Colors.blue,
                     Colors.red,
                   ],
-                  animationDuration: Duration(seconds: 2),
+                  animationDuration: const Duration(seconds: 2),
                   thickness: 3,
                   spacing: 5,
-                  child: Center(
-                    child: Text("Mohamed Elbaiomy"),
+                  child: const Center(
+                    child: Text('Mohamed Elbaiomy'),
                   ),
                 ),
               ),
@@ -84,16 +84,16 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                 height: 70,
                 width: double.infinity,
                 child: GradientGlowBorder.dotted(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  colors: [
+                  borderRadius: const BorderRadius.all(Radius.circular(15)),
+                  colors: const [
                     Colors.blue,
                     Colors.red,
                   ],
-                  animationDuration: Duration(seconds: 2),
+                  animationDuration: const Duration(seconds: 2),
                   thickness: 3,
                   spacing: 5,
-                  child: Center(
-                    child: Text("Mohamed Elbaiomy"),
+                  child: const Center(
+                    child: Text('Mohamed Elbaiomy'),
                   ),
                 ),
               ),
@@ -102,21 +102,21 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                 height: 70,
                 width: double.infinity,
                 child: GradientGlowBorder.dashed(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topRight: Radius.circular(30),
                     topLeft: Radius.circular(1),
                     bottomRight: Radius.circular(30),
                     bottomLeft: Radius.circular(1),
                   ),
                   spacing: 5,
-                  colors: [
+                  colors: const [
                     Colors.red,
                     Colors.blue,
                   ],
-                  animationDuration: Duration(seconds: 2),
+                  animationDuration: const Duration(seconds: 2),
                   thickness: 3,
-                  child: Center(
-                    child: Text("Mohamed Elbaiomy"),
+                  child: const Center(
+                    child: Text('Mohamed Elbaiomy'),
                   ),
                 ),
               ),
