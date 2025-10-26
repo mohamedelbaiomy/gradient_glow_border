@@ -39,17 +39,20 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              // Example 1: Solid animated gradient border
               SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: GradientGlowBorder.normalGradient(
+                child: GradientGlowBorder.solid(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   blurRadius: 1,
                   colors: [
                     Colors.blue,
                     Colors.red,
                   ],
-                  duration: Duration(milliseconds: 500),
+                  animate: true,
+                  animationCurve: Curves.linear,
+                  animationDuration: Duration(seconds: 2),
                   glowOpacity: 1,
                   spreadRadius: 0,
                   thickness: 3,
@@ -58,68 +61,91 @@ class _TestGradientGlowBorderState extends State<TestGradientGlowBorder> {
                   ),
                 ),
               ),
+              // Example 2: Dashed border
               SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: GradientGlowBorder.dashedGradient(
+                child: GradientGlowBorder.dashed(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
-                  blurRadius: 1,
                   colors: [
                     Colors.blue,
                     Colors.red,
                   ],
-                  duration: Duration(milliseconds: 500),
-                  glowOpacity: 1,
-                  spreadRadius: 0,
+                  animationDuration: Duration(seconds: 2),
                   thickness: 3,
-                  dashSpace: 5,
+                  spacing: 5,
                   child: Center(
                     child: Text("Mohamed Elbaiomy"),
                   ),
                 ),
               ),
+              // Example 3: Dotted border
               SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: GradientGlowBorder.dottedGradient(
+                child: GradientGlowBorder.dotted(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
-                  blurRadius: 1,
                   colors: [
                     Colors.blue,
                     Colors.red,
                   ],
-                  duration: Duration(milliseconds: 500),
-                  glowOpacity: 1,
-                  spreadRadius: 0,
+                  animationDuration: Duration(seconds: 2),
                   thickness: 3,
-                  dottedSpace: 5,
+                  spacing: 5,
                   child: Center(
                     child: Text("Mohamed Elbaiomy"),
                   ),
                 ),
               ),
+              // Example 4: Different border radius per corner
               SizedBox(
                 height: 70,
                 width: double.infinity,
-                child: GradientGlowBorder.dashedGradient(
+                child: GradientGlowBorder.dashed(
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(30),
                     topLeft: Radius.circular(1),
                     bottomRight: Radius.circular(30),
                     bottomLeft: Radius.circular(1),
                   ),
-                  dashSpace: 5,
-                  blurRadius: 1,
+                  spacing: 5,
                   colors: [
                     Colors.red,
                     Colors.blue,
                   ],
-                  duration: Duration(milliseconds: 500),
-                  glowOpacity: 1,
-                  spreadRadius: 0,
+                  animationDuration: Duration(seconds: 2),
                   thickness: 3,
                   child: Center(
                     child: Text("Mohamed Elbaiomy"),
+                  ),
+                ),
+              ),
+              // Example 5: Custom configuration
+              SizedBox(
+                height: 70,
+                child: GradientGlowBorder(
+                  config: BorderConfig(
+                    borderRadius: BorderRadius.circular(24),
+                    colors: const [
+                      Color(0xFFFF6B6B),
+                      Color(0xFFFFE66D),
+                      Color(0xFF4ECDC4),
+                      Color(0xFF556270),
+                    ],
+                    thickness: 4,
+                    blurRadius: 16,
+                    spreadRadius: 3,
+                    glowOpacity: 0,
+                    borderStyle: BorderStyleEnum.solid,
+                    animate: true,
+                    animationDuration: const Duration(seconds: 3),
+                    animationCurve: Curves.easeInOut,
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Mohamed Elbaiomy',
+                      style: TextStyle(fontSize: 18),
+                    ),
                   ),
                 ),
               ),

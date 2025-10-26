@@ -1,4 +1,52 @@
 include: package:flutter_lints/flutter.yaml
 
-# Additional information about this file can be found at
+analyzer:
+  errors:
+    deprecated_member_use: ignore
+
+linter:
+  rules:
+    avoid_print: true
+    avoid_empty_else: true
+    avoid_redundant_argument_values: true
+    avoid_single_cascade_in_expression_statements: true
+    empty_catches: true
+
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_final_fields: true
+    prefer_final_locals: true
+    prefer_single_quotes: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_const_constructors_in_immutables: true
+
+    use_enums: true
+    unnecessary_new: true
+    unnecessary_late: true
+    unnecessary_this: true
+    unnecessary_const: true
+    unnecessary_breaks: true
+    use_named_constants: true
+    use_super_parameters: true
+    # unawaited_futures: true
+    unreachable_from_main: true
+    unnecessary_underscores: true
+    unnecessary_parenthesis: true
+
+dart_code_metrics:
+  metrics-exclude:
+    - test/**
+  rules:
+    - argument-ordering
+    - avoid-wrapping-in-padding
+    - avoid-unnecessary-setstate
+    - prefer-trailing-comma
+    - avoid-nested-conditional-expressions
+  metrics:
+    cyclomatic-complexity: 20
+    number-of-parameters: 4
+    source-lines-of-code: 100
+
 # https://dart.dev/guides/language/analysis-options
