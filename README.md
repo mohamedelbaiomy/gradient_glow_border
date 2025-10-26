@@ -27,7 +27,7 @@ Add the package to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  gradient_glow_border: ^2.0.0
+  gradient_glow_border: ^2.0.1
 ```
 
 Then, run:
